@@ -1,5 +1,4 @@
 let booksRow = document.querySelector(".books");
-// let booksList = document.querySelector(".books");
 let filters = document.querySelector(".filters");
 let library_modal__list = document.querySelector(".library-modal__list");
 
@@ -39,7 +38,6 @@ function localRender() {
 }
 
 const addLocalStorage = (data) => {
-  // console.log(data);
   let local = JSON.parse(localStorage.getItem("data")) || [];
 
   if (local.includes(data)) {
@@ -119,6 +117,7 @@ function render(book) {
 
 render(booksData);
 localRender();
+
 
 filters.addEventListener("submit", (e) => {
   e.preventDefault();
