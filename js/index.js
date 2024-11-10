@@ -118,6 +118,7 @@ function render(book) {
 render(booksData);
 localRender();
 
+// Filters
 
 filters.addEventListener("submit", (e) => {
   e.preventDefault();
