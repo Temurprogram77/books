@@ -50,6 +50,8 @@ const addLocalStorage = (data) => {
   localRender();
 };
 
+// Card create element
+
 function render(book) {
   let local = JSON.parse(localStorage.getItem("data")) || [];
   booksRow.innerHTML = null;
