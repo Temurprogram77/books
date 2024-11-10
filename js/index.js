@@ -9,6 +9,8 @@ let country_filter = filters.country_filter;
 let from_year = filters.from_year;
 let to_year = filters.to_year;
 
+// Modal ul, p, btn
+
 function localRender() {
   library_modal__list.innerHTML = null;
   let local = JSON.parse(localStorage.getItem("data")) || [];
