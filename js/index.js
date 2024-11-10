@@ -37,6 +37,8 @@ function localRender() {
   }
 }
 
+// Add LocalStorage
+
 const addLocalStorage = (data) => {
   let local = JSON.parse(localStorage.getItem("data")) || [];
 
